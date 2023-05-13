@@ -38,25 +38,12 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
             InlineKeyboardButton(
                 text=_["PL_B_2"],
                 callback_data=f"add_playlist {videoid}",
-            ),
-            InlineKeyboardButton(
-                text=" ᴏᴡɴᴇʀ 💞", url=f"https://t.me/EpIc_KiNg_OFFICIAL"
-            ),
-        ],
-        [
+            
             InlineKeyboardButton(
                 text=_["PL_B_3"],
                 callback_data=f"PanelMarkup {videoid}|{chat_id}",
-            ),
-            InlineKeyboardButton(text="ᴛᴏxɪᴄ ᴄʜᴀᴛ 💌", url=f"https://t.me/indian_chatting_club_offical"),
-        ],
-        [
-            InlineKeyboardButton(
-                text=f"ɪᴄᴠ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ",
-                url=f"https://t.me/Icc_chat_GD_bot",
-            )
-        ],
-    ]
+            
+            
     return buttons
 
 
@@ -73,41 +60,16 @@ def telegram_markup_timer(_, chat_id, played, dur):
             InlineKeyboardButton(
                 text=_["PL_B_2"],
                 callback_data=f"add_playlist {videoid}",
-            ),
-            InlineKeyboardButton(text="ᴏᴡɴᴇʀ 💞", url=f"https://t.me/EpIc_KiNg_OFFICIAL"),
-        ],
-        [
+            
             InlineKeyboardButton(
                 text=_["PL_B_3"],
                 callback_data=f"PanelMarkup None|{chat_id}",
-            ),
-            InlineKeyboardButton(text="ᴀʟᴇxᴀ ᴄʜᴀᴛ 💌", url=f"https://t.me/indian_chatting_club_offical"),
-        ],
-    ]
-    return buttons
+            
+
 
 
 ## Inline without Timer Bar
 
-
-def stream_markup(_, videoid, chat_id):
-    buttons = [
-        [
-            InlineKeyboardButton(
-                text=_["PL_B_2"],
-                callback_data=f"add_playlist {videoid}",
-            ),
-            InlineKeyboardButton(text="ᴏᴡɴᴇʀ 💞", url=f"https://t.me/EpIc_KiNg_OFFICIAL"),
-        ],
-        [
-            InlineKeyboardButton(
-                text=_["PL_B_3"],
-                callback_data=f"PanelMarkup None|{chat_id}",
-            ),
-            InlineKeyboardButton(text="ᴀʟᴇxᴀ ᴄʜᴀᴛ 💌", url=f"https://t.me/indian_chatting_club_offical"),
-        ],
-    ]
-    return buttons
 
 
 def telegram_markup(_, chat_id):
